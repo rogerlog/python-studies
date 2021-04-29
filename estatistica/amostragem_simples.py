@@ -7,8 +7,7 @@ base
 base.shape
 
 np.random.seed(2345)
-amostra = np.random.choice(a = [0, 1], size = 150, replace = True,
-                           p = [0.5, 0.5])
+amostra = np.random.choice(a = [0, 1], size = 150, replace = True, p = [0.5, 0.5])
 len(amostra)
 len(amostra[amostra == 1])
 len(amostra[amostra == 0])

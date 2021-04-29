@@ -11,7 +11,7 @@ r = np.random.randint(low = 1, high = k + 1, size = 1)
 acumulador = r[0]
 sorteados = []
 for i in range(amostra):
-    #print(acumulador)
+    print(acumulador)
     sorteados.append(acumulador)
     acumulador += k
     

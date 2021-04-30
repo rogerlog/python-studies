@@ -13,4 +13,4 @@ infert['education'].value_counts()
 
 X1, _, y1, _ = train_test_split(infert.iloc[:, 2:9], infert.iloc[:, 1],
                                 test_size = 0.6, stratify = infert.iloc[:, 1])
-y1.value_counts()
+print(y1.value_counts())

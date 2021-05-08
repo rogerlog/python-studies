@@ -2,9 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-#from yellowbrick.regressor import ResidualsPlot
+"""
+from yellowbrick.regressor import ResidualsPlot
+"""
 
-base = pd.read_csv('cars.csv')
+base = pd.read_csv('bd/cars.csv')
 base = base.drop(['Unnamed: 0'], axis = 1)
 
 X = base.iloc[:, 1].values

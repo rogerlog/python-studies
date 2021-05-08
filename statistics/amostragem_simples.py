@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-base = pd.read_csv('iris.csv')
+base = pd.read_csv('bd/iris.csv')
 base
 
 base.shape

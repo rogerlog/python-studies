@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import statsmodels.formula.api as sm
 
-base = pd.read_csv('mt_cars.csv')
+base = pd.read_csv('bd/mt_cars.csv')
 base = base.drop(['Unnamed: 0'], axis = 1)
 
 X = base.iloc[:, 2].values

@@ -15,5 +15,5 @@ for i in range(amostra):
     sorteados.append(acumulador)
     acumulador += k
     
-base = pd.read_csv('iris.csv')
+base = pd.read_csv('bd/iris.csv')
 base_final = base.loc[sorteados]

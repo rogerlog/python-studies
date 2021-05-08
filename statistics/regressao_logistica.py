@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-base = pd.read_csv('Eleicao.csv', sep = ';')
+base = pd.read_csv('bd/Eleicao.csv', sep = ';')
 plt.scatter(base.DESPESAS, base.SITUACAO)
 base.describe()
 
@@ -25,7 +25,7 @@ def model(x):
 r = model(X_teste * modelo.coef_ + modelo.intercept_).ravel()
 plt.plot(X_teste, r, color = 'red')
 
-base_previsoes = pd.read_csv('NovosCandidatos.csv', sep = ';')
+base_previsoes = pd.read_csv('bd/NovosCandidatos.csv', sep = ';')
 despesas = base_previsoes.iloc[:, 1].values
 despesas = despesas.reshape(-1, 1)
 previsoes_teste = modelo.predict(despesas)

@@ -13,7 +13,19 @@ The purpose of this repository is to create a file using all Python syntax.
 
 ------
 
-## Python for Data Analysis
+## Data Analysis
 
 - [**Counter**](analysis/counteranalysis.py)
 - [**Counter Times with Pandas**](analysis/counterTimesPandas.py)
+
+------
+
+## Data Statistics
+
+- [**T-Student**](statistics/t_student.py)
+
+
+------
+
+## Time Series
+

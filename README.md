@@ -11,12 +11,18 @@ The purpose of this repository is to create a file using all Python syntax.
 - [**Variables**](intro/variables.py)
 - [**Numbers**](intro/numbers.py)
 
+<br>
+
 ------
 
 ## Data Analysis
 
 - [**Counter**](analysis/counteranalysis.py)
 - [**Counter Times with Pandas**](analysis/counterTimesPandas.py)
+
+
+
+<br>
 
 ------
 
@@ -25,7 +31,35 @@ The purpose of this repository is to create a file using all Python syntax.
 - [**T-Student**](statistics/t_student.py)
 
 
+
+<br>
+
+
 ------
 
 ## Time Series
+
+
+
+
+
+<br>
+
+<hr>
+
+## Data Scraping
+
+
+
+
+
+<br>
+
+<hr>
+
+## Plot Statistics
+
+https://plotly.com/python/getting-started-with-chart-studio/
+
+
 

@@ -13,7 +13,7 @@ class Usuarios(object):
         self.usuario = usuario
         self.senha = senha
 
-    def insertUser(self):
+    def insertuser(self):
         banco = Banco()
         try:
 
@@ -30,7 +30,7 @@ class Usuarios(object):
         except:
             return "Ocorreu um erro na inserção do usuário"
 
-    def updateUser(self):
+    def updateuser(self):
         banco = Banco()
         try:
 
@@ -51,7 +51,7 @@ class Usuarios(object):
         except:
             return "Ocorreu um erro na alteração do usuário"
 
-    def deleteUser(self):
+    def deleteuser(self):
         banco = Banco()
         try:
 
@@ -66,7 +66,7 @@ class Usuarios(object):
         except:
             return "Ocorreu um erro na exclusão do usuário"
 
-    def selectUser(self, idusuario):
+    def selectuser(self, idusuario):
         banco = Banco()
         try:
 

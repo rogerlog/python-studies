@@ -1,7 +1,6 @@
 from Usuarios import Usuarios
 from tkinter import *
 
-
 class Application:
 
     def __init__(self, master=None):
@@ -63,7 +62,7 @@ class Application:
         self.txtidusuario.pack(side=LEFT)
 
         self.btnBuscar = Button(self.container2, text="Buscar", font=self.fonte, width=10)
-        self.btnBuscar["command"] = self.buscarUsuario
+        self.btnBuscar["command"] = self.buscarusuario
         self.btnBuscar.pack(side=RIGHT)
 
         self.lblnome = Label(self.container3, text="Nome:", font=self.fonte, width=10)
@@ -108,29 +107,29 @@ class Application:
         self.txtsenha.pack(side=LEFT)
 
         self.bntInsert = Button(self.container8, text="Inserir", font=self.fonte, width=12)
-        self.bntInsert["command"] = self.inserirUsuario
+        self.bntInsert["command"] = self.inserirusuario
         self.bntInsert.pack(side=LEFT)
 
         self.bntAlterar = Button(self.container8, text="Alterar", font=self.fonte, width=12)
-        self.bntAlterar["command"] = self.alterarUsuario
+        self.bntAlterar["command"] = self.alterarusuario
         self.bntAlterar.pack(side=LEFT)
 
         self.bntExcluir = Button(self.container8, text="Excluir", font=self.fonte, width=12)
-        self.bntExcluir["command"] = self.excluirUsuario
+        self.bntExcluir["command"] = self.excluirusuario
         self.bntExcluir.pack(side=LEFT)
 
         self.lblmsg = Label(self.container9, text="")
         self.lblmsg["font"] = ("Verdana", "9", "italic")
         self.lblmsg.pack()
 
-    def inserirUsuario(self):
+    def inserirusuario(self):
         user = Usuarios()
         user.nome = self.txtnome.get()
         user.telefone = self.txttelefone.get()
         user.email = self.txtemail.get()
         user.usuario = self.txtusuario.get()
         user.senha = self.txtsenha.get()
-        self.lblmsg["text"] = user.insertUser()
+        self.lblmsg["text"] = user.insertuser()
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
         self.txttelefone.delete(0, END)
@@ -138,7 +137,7 @@ class Application:
         self.txtusuario.delete(0, END)
         self.txtsenha.delete(0, END)
 
-    def alterarUsuario(self):
+    def alterarusuario(self):
         user = Usuarios()
         user.idusuario = self.txtidusuario.get()
         user.nome = self.txtnome.get()
@@ -146,7 +145,7 @@ class Application:
         user.email = self.txtemail.get()
         user.usuario = self.txtusuario.get()
         user.senha = self.txtsenha.get()
-        self.lblmsg["text"] = user.updateUser()
+        self.lblmsg["text"] = user.updateuser()
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
         self.txttelefone.delete(0, END)
@@ -154,10 +153,10 @@ class Application:
         self.txtusuario.delete(0, END)
         self.txtsenha.delete(0, END)
 
-    def excluirUsuario(self):
+    def excluirusuario(self):
         user = Usuarios()
         user.idusuario = self.txtidusuario.get()
-        self.lblmsg["text"] = user.deleteUser()
+        self.lblmsg["text"] = user.deleteuser()
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
         self.txttelefone.delete(0, END)
@@ -165,10 +164,10 @@ class Application:
         self.txtusuario.delete(0, END)
         self.txtsenha.delete(0, END)
 
-    def buscarUsuario(self):
+    def buscarusuario(self):
         user = Usuarios()
         idusuario = self.txtidusuario.get()
-        self.lblmsg["text"] = user.selectUser(idusuario)
+        self.lblmsg["text"] = user.selectuser(idusuario)
         self.txtidusuario.delete(0, END)
         self.txtidusuario.insert(INSERT, user.idusuario)
         self.txtnome.delete(0, END)
